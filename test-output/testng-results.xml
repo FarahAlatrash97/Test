@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-02-04T11:27:14 EET" name="Default suite" finished-at="2024-02-04T11:27:57 EET" duration-ms="42960">
+    <groups>
+    </groups>
+    <test started-at="2024-02-04T11:27:14 EET" name="Default test" finished-at="2024-02-04T11:27:57 EET" duration-ms="42960">
+      <class name="magentoWeb.MyTestCases">
+        <test-method is-config="true" signature="mySetup()[pri:0, instance:magentoWeb.MyTestCases@5d018107]" started-at="2024-02-04T11:27:14 EET" name="mySetup" finished-at="2024-02-04T11:27:20 EET" duration-ms="6240" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mySetup -->
+        <test-method signature="SighnUp()[pri:1, instance:magentoWeb.MyTestCases@5d018107]" started-at="2024-02-04T11:27:20 EET" name="SighnUp" finished-at="2024-02-04T11:27:33 EET" duration-ms="12167" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SighnUp -->
+        <test-method signature="Logout()[pri:2, instance:magentoWeb.MyTestCases@5d018107]" started-at="2024-02-04T11:27:33 EET" name="Logout" finished-at="2024-02-04T11:27:38 EET" duration-ms="4890" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Logout -->
+        <test-method signature="Login()[pri:3, instance:magentoWeb.MyTestCases@5d018107]" started-at="2024-02-04T11:27:38 EET" name="Login" finished-at="2024-02-04T11:27:45 EET" duration-ms="7441" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method signature="AddOneRandomItem()[pri:4, instance:magentoWeb.MyTestCases@5d018107]" started-at="2024-02-04T11:27:45 EET" name="AddOneRandomItem" finished-at="2024-02-04T11:27:57 EET" duration-ms="12079" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddOneRandomItem -->
+      </class> <!-- magentoWeb.MyTestCases -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
