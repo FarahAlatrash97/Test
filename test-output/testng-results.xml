@@ -1,33 +1,84 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="5" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-04T11:27:14 EET" name="Default suite" finished-at="2024-02-04T11:27:57 EET" duration-ms="42960">
+  <suite started-at="2024-06-02T23:33:45 EET" name="Default suite" finished-at="2024-06-02T23:33:50 EET" duration-ms="4751">
     <groups>
     </groups>
-    <test started-at="2024-02-04T11:27:14 EET" name="Default test" finished-at="2024-02-04T11:27:57 EET" duration-ms="42960">
-      <class name="magentoWeb.MyTestCases">
-        <test-method is-config="true" signature="mySetup()[pri:0, instance:magentoWeb.MyTestCases@5d018107]" started-at="2024-02-04T11:27:14 EET" name="mySetup" finished-at="2024-02-04T11:27:20 EET" duration-ms="6240" status="PASS">
+    <test started-at="2024-06-02T23:33:45 EET" name="Default test" finished-at="2024-06-02T23:33:50 EET" duration-ms="4751">
+      <class name="SwagLabWeb.myTestcases">
+        <test-method is-config="true" signature="mySetup()[pri:0, instance:SwagLabWeb.myTestcases@2dbe250d]" started-at="2024-06-02T23:33:45 EET" name="mySetup" finished-at="2024-06-02T23:33:46 EET" duration-ms="1658" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- mySetup -->
-        <test-method signature="SighnUp()[pri:1, instance:magentoWeb.MyTestCases@5d018107]" started-at="2024-02-04T11:27:20 EET" name="SighnUp" finished-at="2024-02-04T11:27:33 EET" duration-ms="12167" status="PASS">
+        <test-method signature="Sighnin()[pri:1, instance:SwagLabWeb.myTestcases@2dbe250d]" started-at="2024-06-02T23:33:47 EET" name="Sighnin" finished-at="2024-06-02T23:33:48 EET" duration-ms="1128" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- SighnUp -->
-        <test-method signature="Logout()[pri:2, instance:magentoWeb.MyTestCases@5d018107]" started-at="2024-02-04T11:27:33 EET" name="Logout" finished-at="2024-02-04T11:27:38 EET" duration-ms="4890" status="PASS">
+        </test-method> <!-- Sighnin -->
+        <test-method signature="addRandom()[pri:2, instance:SwagLabWeb.myTestcases@2dbe250d]" started-at="2024-06-02T23:33:48 EET" name="addRandom" finished-at="2024-06-02T23:33:48 EET" duration-ms="177" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Logout -->
-        <test-method signature="Login()[pri:3, instance:magentoWeb.MyTestCases@5d018107]" started-at="2024-02-04T11:27:38 EET" name="Login" finished-at="2024-02-04T11:27:45 EET" duration-ms="7441" status="PASS">
+        </test-method> <!-- addRandom -->
+        <test-method signature="addRandom()[pri:2, instance:SwagLabWeb.myTestcases@2dbe250d]" started-at="2024-06-02T23:33:48 EET" name="addRandom" finished-at="2024-06-02T23:33:48 EET" duration-ms="153" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Login -->
-        <test-method signature="AddOneRandomItem()[pri:4, instance:magentoWeb.MyTestCases@5d018107]" started-at="2024-02-04T11:27:45 EET" name="AddOneRandomItem" finished-at="2024-02-04T11:27:57 EET" duration-ms="12079" status="PASS">
+        </test-method> <!-- addRandom -->
+        <test-method signature="assurance()[pri:3, instance:SwagLabWeb.myTestcases@2dbe250d]" started-at="2024-06-02T23:33:48 EET" name="assurance" finished-at="2024-06-02T23:33:48 EET" duration-ms="71" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- AddOneRandomItem -->
-      </class> <!-- magentoWeb.MyTestCases -->
+        </test-method> <!-- assurance -->
+        <test-method signature="checkOut()[pri:4, instance:SwagLabWeb.myTestcases@2dbe250d]" started-at="2024-06-02T23:33:48 EET" name="checkOut" finished-at="2024-06-02T23:33:49 EET" duration-ms="926" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkOut -->
+        <test-method signature="logout()[pri:5, instance:SwagLabWeb.myTestcases@2dbe250d]" started-at="2024-06-02T23:33:49 EET" name="logout" finished-at="2024-06-02T23:33:50 EET" duration-ms="501" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [[[ChromeDriver: chrome on windows (7014585a229de52dfde73b87d947e8d0)] -> id: login-button]]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [[[ChromeDriver: chrome on windows (7014585a229de52dfde73b87d947e8d0)] -> id: login-button]]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:617)
+at SwagLabWeb.myTestcases.logout(myTestcases.java:104)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+      </class> <!-- SwagLabWeb.myTestcases -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
